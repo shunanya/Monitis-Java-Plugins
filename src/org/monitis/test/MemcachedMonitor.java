@@ -1,11 +1,10 @@
-package org.sourcio.monitis.test;
+package org.monitis.test;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -17,18 +16,18 @@ import net.rubyeye.xmemcached.XMemcachedClientBuilder;
 import net.rubyeye.xmemcached.command.BinaryCommandFactory;
 import net.rubyeye.xmemcached.utils.AddrUtil;
 
-import org.sourcio.monitis.Test.GenericCustomMonitorRunner;
-import org.sourcio.monitis.Test.IGenericCustomMonitor;
-import org.sourcio.monitis.beans.MonResult;
-import org.sourcio.monitis.beans.MonResultParameter;
-import org.sourcio.monitis.beans.MonitorParameter;
-import org.sourcio.monitis.enums.DataType;
-import org.sourcio.monitis.utils.TimeUtility;
+import org.monitis.GenericCustomMonitor.GenericCustomMonitorRunner;
+import org.monitis.GenericCustomMonitor.IGenericCustomMonitor;
+import org.monitis.beans.MonResult;
+import org.monitis.beans.MonResultParameter;
+import org.monitis.beans.MonitorParameter;
+import org.monitis.enums.DataType;
+import org.monitis.utils.TimeUtility;
 
 public class MemcachedMonitor extends  IGenericCustomMonitor {
 	
-	private static final String apiKey = "4DURRI9JDEG5QN394DO14Q9C0D";
-	private static final String secretKey = "1Q89OGT6BO95J4TH58A56S73T9";
+	private static final String apiKey = "2PE0HVI4DHP34JACKCAE37IOD4";
+	private static final String secretKey = "7OI90FU3C3DA8ENLNJ0JGGOGO0";
     private static final String monitor_name = "Custom_monitor";//Name
     private static final String monitor_tag_value = "Memcached_monitor";//Monitor Group
     private static String servers = "localhost:11211";//local memcached server

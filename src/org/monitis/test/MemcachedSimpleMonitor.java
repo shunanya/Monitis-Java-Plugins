@@ -1,4 +1,4 @@
-package org.sourcio.monitis.test;
+package org.monitis.test;
 
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -13,12 +13,12 @@ import net.rubyeye.xmemcached.XMemcachedClientBuilder;
 import net.rubyeye.xmemcached.command.BinaryCommandFactory;
 import net.rubyeye.xmemcached.utils.AddrUtil;
 
-import org.sourcio.monitis.Test.GenericCustomMonitorRunner;
-import org.sourcio.monitis.Test.IGenericCustomMonitor;
-import org.sourcio.monitis.beans.MonResult;
-import org.sourcio.monitis.beans.MonResultParameter;
-import org.sourcio.monitis.beans.MonitorParameter;
-import org.sourcio.monitis.enums.DataType;
+import org.monitis.GenericCustomMonitor.GenericCustomMonitorRunner;
+import org.monitis.GenericCustomMonitor.IGenericCustomMonitor;
+import org.monitis.beans.MonResult;
+import org.monitis.beans.MonResultParameter;
+import org.monitis.beans.MonitorParameter;
+import org.monitis.enums.DataType;
 
 public class MemcachedSimpleMonitor extends  IGenericCustomMonitor {
 	
